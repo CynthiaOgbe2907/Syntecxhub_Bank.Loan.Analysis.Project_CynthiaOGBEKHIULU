@@ -10,17 +10,17 @@ This repository features an end-to-end data analytics project designed to evalua
 ### 1. Executive Summary Dashboard
 *Monitors high-level lending parameters, month-over-month performance shifts, and partitions portfolio health dynamically into Good vs. Bad loan categories.*
 
-![Executive Summary Dashboard](summary_dashboard.png)
+![Executive Summary Dashboard](summary.png)
 
 ### 2. Operational Overview Dashboard
 *Provides a multi-dimensional look into geographic disbursement densities, lending purposes, employment durations, and homeownership trends.*
 
-![Operational Overview Dashboard](overview_dashboard.png)
+![Operational Overview Dashboard](overview.png)
 
 ### 3. Granular Details Grid
 *An audit-ready, consolidated tabular interface offering full data visibility into borrower metrics for compliance verification.*
 
-![Granular Details Grid](details_dashboard.png)
+![Granular Details Grid](details.png)
 
 ---
 
