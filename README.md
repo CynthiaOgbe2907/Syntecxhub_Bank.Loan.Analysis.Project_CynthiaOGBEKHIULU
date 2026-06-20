@@ -1,21 +1,55 @@
-# Syntecxhub_Bank.Loan.Analysis.Project_CynthiaOGBEKHIULU
-​
-An end-to-end data analytics project using SQL and Power BI to evaluate, track, and optimize a commercial bank's lending operations. This repository features an interactive 3-page business intelligence dashboard that monitors key portfolio health indicators (KPIs), identifies regional risk vectors, and segments loan applications based on financial performance.
+# 🏦 Bank Loan Analysis Project
 
+## 📊 Project Overview
+This repository features an end-to-end data analytics project designed to evaluate, track, and optimize a commercial bank's lending operations. Utilizing **SQL** for robust data extraction and auditing, alongside **Power BI** for advanced data modeling and storytelling, this project provides a comprehensive look into portfolio health indicators ($KPIs$), lending trends, risk vectors, and structural compliance margins.
 
-🔑 Key Portfolio Insights & Features
+---
 
-• Executive Summary Dashboard: Real-time tracking of critical high-level metrics including Total Loan Applications (38.6K), Total Funded Amount ($435.8M), and Total Amount Received ($473.1M). Features dynamic Month-over-Month (MoM) tracking and dedicated monitoring sections dividing performance cleanly into "Good Loans" (86% success rate) vs. "Bad Loans" (14% default rate).
+## 🖥️ Interactive Dashboards
 
-• Operational Overview Dashboard: A comprehensive breakdown of lending trends using advanced visualization components. It integrates a geographic Shape Map tracking state-by-state funding density alongside tracking matrices analyzing loan metrics by purpose (e.g., Debt Consolidation, Credit Cards), employment duration, and homeownership status.
+### 1. Executive Summary Dashboard
+*Monitors high-level lending parameters, month-over-month performance shifts, and partitions portfolio health dynamically into Good vs. Bad loan categories.*
 
-• Granular Details Grid: A central, audit-ready visual table layout providing full operational visibility into individual borrower attributes, interest structures, debt-to-income (DTI) margins, and payment statuses for compliance and data verification.
+![Executive Summary Dashboard](summary_dashboard.png)
 
+### 2. Operational Overview Dashboard
+*Provides a multi-dimensional look into geographic disbursement densities, lending purposes, employment durations, and homeownership trends.*
 
-🛠️ Technical Stack & Implementation
-• Data Extraction & Manipulation: SQL queries used to aggregate raw loan databases, run performance checks, and benchmark logic calculations.
+![Operational Overview Dashboard](overview_dashboard.png)
 
-• Advanced Data Modeling: Developed a dedicated calendar system (Date-table) and customized DAX logic structures to resolve regional date parsing/locale mismatches and enable seamless time-intelligence reporting (MTD, PMTD, and MoM\%).
+### 3. Granular Details Grid
+*An audit-ready, consolidated tabular interface offering full data visibility into borrower metrics for compliance verification.*
 
-• UI/UX Design: Implemented condensed, scannable data layouts using custom formatting, color-coded status tracking, and structural grids to align reporting metrics with real-world banking auditing workflows.
+![Granular Details Grid](details_dashboard.png)
 
+---
+
+## 🔑 Key Insights & Analytics Features
+
+* **Portfolio Health Tracking:** Monitors critical $KPIs$ including **Total Loan Applications (38.6K)**, **Total Funded Amount (\$435.8M)**, and **Total Amount Received (\$473.1M)**.
+* **Risk Categorization (Good vs. Bad Loans):** Segments records to reveal an **86.1% Good Loan** success rate against a **13.9% Bad Loan** default rate to protect bank capital margins.
+* **Advanced Time-Intelligence:** Implemented precise dynamic and fixed Month-to-Date ($MTD$), Previous Month-to-Date ($PMTD$), and Month-over-Month ($MoM\%$) calculation logic.
+* **Geographic Intelligence:** Features an interactive **Shape Map** tracking state-by-state financial saturation and application density across the United States.
+
+---
+
+## 🛠️ Technical Stack & Implementation
+
+### 1. Data Manipulation & Aggregation (SQL)
+* Standardized raw bank records and structured benchmarking metrics.
+* Developed validation queries to ensure Power BI calculations tie back identically to source data aggregates.
+
+### 2. Data Modeling & Advanced DAX (Power BI)
+* Created a resilient, dynamic string-to-date conversion column (`Issue Date Proper`) to successfully bypass multi-format data-type inconsistencies (`DD-MM-YYYY` vs `M/D/YYYY`).
+* Built a custom, fully connected calendar table (`Date-table`) to manage time intelligence cleanly independent of local machine regional configurations.
+* Overrode standard `TOTALMTD` limitations on flat data configurations using custom `CALCULATE` filters for flawless row-level cross-filtering inside matrix blocks.
+
+---
+
+## 📂 Repository Structure
+* `/Dataset` : Contains the raw financial loan CSV data used for testing and verification.
+* `/PowerBI_Report` : Contains the native `.pbix` dashboard file.
+
+---
+### 👤 Author
+Developed by **Cynthia Ogbekhiulu** * GitHub: [@CynthiaOgbe2907](https://github.com/CynthiaOgbe2907)
